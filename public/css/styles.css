@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb;
+}
+
+main{
+    background-color: #ebebeb;
+    text-align: center;
+    width: 90vw;
+    margin: auto;
+
+}
+
+main img{
+    width: 100%;
+}
+
+#superior{
+    background-color: #EAC926;
+    width: 100%;
+}
+.header-top{
+    display: flex;
+    justify-content: space-around;
+    width: 95vw;
+}
+
+.busqueda{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.busqueda input{
+    height: 16px;
+    text-align: center;
+    margin-top: 3vh;
+    padding: 2px;
+    border-radius: 5px;
+    color: #666;
+    box-sizing: content-box;
+    border: none;
+    width: 100%;
+}
+.busqueda button{
+    height: 16px;
+    text-align: right;
+    margin-top: 3vh;
+    border-top: solid 6px white;
+    border-bottom: solid 6px white;
+    border-radius: 5px;
+    color: #666;
+    background-color: white;
+    box-sizing: content-box;
+    position:absolute;
+    border: none;
+    padding: 2px;
+    justify-content: flex-end;
+}
+.encabezado1{
+    width: 40%;
+    text-align: center;
+    margin-right: 2vw;
+    height: 16px;
+    margin-top: 4vh;
+}
+
+.logo{
+    width: 50%;
+    margin: 2vh 1vw 1vh 2vw;
+}
+
+.encabezado{
+    text-align: center;
+    margin: 2vh 0;
+}
+
+.burger-menu{
+    text-align: center;
+    border-bottom: solid 1vh #EAC926 ;
+}
+
+.burger-menu i{
+    background-color: #1259c3;
+    color: white;
+    size: 2em;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.banner img{
+    width: 100%;
+}
+
+h3{
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 1vh;
+}
+
+.articulos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+
+.texto{
+    background-color: white;
+    text-align: left;
+    border-top: solid 1px #ebebeb;
+    box-sizing: border-box;
+    padding: 15px;
+    position: relative;
+}
+
+.articulo1{
+    margin-bottom: 10px;
+}
+
+.texto i{
+    color: #39b54a;
+    padding: 8px;
+    border-radius: 50%;
+    border: solid 1px #39b54a;
+}
+
+.sub-texto{
+    display: flex;
+    align-self: flex-end;
+}
+
+.truck i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main article div.articulo1 i{
+    transition: transform 1s;
+}
+
+main article div.articulo1:hover i{
+    transform: rotate(360deg);
+}
+
+.precio{
+    font-size: 18px;
+    line-height: 26px;
+    color: #666;
+    margin-right: 2vw;
+    width: 30%;
+}
+
+.descuento{
+    font-size: 16px;
+    line-height: 24px;
+    color: #39b54a;;
+    width: 70%;
+    text-align: center;
+}
+
+.descripcion{
+    opacity: 0;
+    font-size: 16px;
+    line-height: 0;
+    font-weight: bold;
+    color: #666;
+    margin: 0px;
+    transition-property: opacity, line-heigth;
+    transition-duration: 0.5s;
+}
+
+/*main article div.articulo1 div.texto .descripcion{
+    opacity: 0;
+    transition-property: opacity, line-heigth;
+    transition-duration: 1s;
+}*/
+
+main article div.articulo1:hover p.descripcion{
+    opacity: 1;
+    line-height: 24px;
+}
+
+.negrita{
+    font-weight: bold ;
+    color: #666;
+}
+
+footer{
+    background-color: white;
+    color: #666;
+    width: 100vw;
+}
+
+.info-footer{
+    text-align: center;
+}
+.card i{
+    size: 20px;
+    color: #03264C;
+    margin-bottom: 10px;
+    margin-top: 2vh;
+}
+.gift i{
+    background-color: white;
+    color: #03264C;
+    margin-bottom: 10px;
+    margin-top: 2vh;
+}
+
+.shield i{
+    background-color: white;
+    color: #03264C;
+    margin-bottom: 10px;
+    margin-top: 2vh;
+}
+
+@media (max-width: 361px){
+    /* Mobile */
+    .descripcion{
+        display: none
+    }
+    .navbar{
+        display: none
+    }
+    .encabezado1{
+        display: none;
+    }
+}
+
+@media (min-width: 361px){
+    /* Tablets */
+    .articulo1{
+        max-width: 40vw;
+        box-shadow: 0px 0px 0px rgb(100, 100, 100);
+        transition: box-shadow, 0.5s
+    }
+    .articulo1:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+   
+    .burger-menu{
+            display: none;}
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2vh;
+    }
+    .navbar1{
+        display: flex;
+        justify-content: space-around;
+        border-bottom: solid 2vh #EAC926;
+    }
+    .navbar1 li{
+        margin: 0 1vw;
+    }
+    .logo{
+        width: 30%;
+    }
+    .busqueda{
+        width: 35%;
+    }
+    .encabezado{
+        display: none;
+    }
+    .encabezado1{
+        width: 35%;
+    }
+}
+
+@media (min-width: 769px){
+    /* Desktop */
+    main img,
+    .texto{
+        max-width: 20vw;
+        box-shadow: 0px 0px 0px rgb(100, 100, 100);
+        transition: box-shadow, 0.5s
+    }
+    main img:hover,
+    .texto:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .burger-menu i{
+        display: none;}
+    
+    .info-footer{
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .footer-info{
+        width: 30%;
+    }
+}
+
+nav ul{
+    list-style: none;
+}
+
+/* Formato para el registro*/
+
+.registro{
+    text-align: left;
+}
+
+.registro label{
+    margin-top: 2vh;
+}
+.registro div input{
+    box-sizing: content-box;
+    padding: 0.5vh;
+    border-radius: 5px;
+    border: none;
+    margin: 1.5vh 0;
+}
+.registro{
+    max-width: 100%;
+}
+.registro h4{
+    margin-top: 1.5vh;
+}
+.botonera{
+    margin-bottom: 3vh;
+}
+
+input:focus{
+    border: solid 2px chocolate;
+}
+
+/* Formato para el login */
+
+.login{
+    min-height: 500px;
+}
+.login input{
+    margin-top: 3vh;
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+    width: 60vw;
+}
+.botonera2{
+    margin: 2vh 0;
+}
+
+.botonera2:hover button{
+    background-color: #0022AA;
+}
+
+.botonera2 button{
+    padding: 6px;
+    background-color: rgb(5, 167, 27);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    width: 60vw;
+}
+
+.nombre-usuario{
+    display: flex;
+    justify-content: center;
+}
+
+.nombre-usuario input{
+    width: 70%;
+    align-self: center;
+}
