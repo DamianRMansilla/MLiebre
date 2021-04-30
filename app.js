@@ -5,10 +5,20 @@ let app = express()
 const publicPath = path.resolve(__dirname, "./public")
 app.use(express.static(publicPath))
 /*
-app.listen(3090, () => console.log("Corriendo en 3090"))
+app.listen(3000, () => console.log("Corriendo en 3090"))
 */
 
-app.listen(process.env.PORT || 3000, function(){ console.log("Servidor corriendo en puerto 3000")})
+var puerto;
+if(process.env.PORT) {
+  puerto = process.env.PORT;
+} else {
+  puerto = 3000;
+}
+
+app.listen(puerto || puerto, function(){ console.log("Servidor corriendo en puerto 3000")})
+
+/*app.listen(process.env.PORT || 3000, function(){ console.log("Servidor corriendo en puerto 3000")})*/
+
 
 app.get("/", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/home.html"))
