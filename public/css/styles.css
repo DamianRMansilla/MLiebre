@@ -100,7 +100,7 @@ main img{
 h3{
     font-size: 24px;
     line-height: 32px;
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
 }
 
 .articulos{
@@ -145,13 +145,7 @@ h3{
     top: -15px;
 }
 
-main article div.articulo1 i{
-    transition: transform 1s;
-}
 
-main article div.articulo1:hover i{
-    transform: rotate(360deg);
-}
 
 .precio{
     font-size: 18px;
@@ -244,15 +238,11 @@ footer{
     /* Tablets */
     .articulo1{
         max-width: 40vw;
-        box-shadow: 0px 0px 0px rgb(100, 100, 100);
-        transition: box-shadow, 0.5s
-    }
-    .articulo1:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-   
     .burger-menu{
-            display: none;}
+        display: none;
+    }
     .navbar{
         display: flex;
         justify-content: space-between;
@@ -285,28 +275,49 @@ footer{
     main img,
     .texto{
         max-width: 20vw;
-        box-shadow: 0px 0px 0px rgb(100, 100, 100);
-        transition: box-shadow, 0.5s
-    }
-    main img:hover,
-    .texto:hover{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .burger-menu i{
-        display: none;}
-    
+        display: none;
+    }
     .info-footer{
         width: 98vw;
         display: flex;
-        justify-content: space-around;}
-
+        justify-content: space-around;
+    }
     .footer-info{
         width: 30%;
+    }
+    .articulos{
+        height: 55vh;
+    }
+    h3{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 6vh;
     }
 }
 
 nav ul{
     list-style: none;
+}
+
+
+@media (pointer: fine){
+    main article div.articulo1 i{
+        transition: transform 1s;
+    }
+    
+    main article div.articulo1:hover i{
+        transform: rotate(360deg);
+    }
+    .articulo1{
+        box-shadow: 0px 0px 0px rgb(100, 100, 100);
+        transition: box-shadow, 0.5s
+    }
+    .articulo1:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);   
+    }
 }
 
 /* Formato para el registro*/
