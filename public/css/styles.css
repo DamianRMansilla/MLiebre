@@ -15,7 +15,6 @@ main{
     text-align: center;
     width: 90vw;
     margin: auto;
-
 }
 
 main img{
@@ -197,10 +196,12 @@ main article div.articulo1:hover p.descripcion{
     color: #666;
 }
 
+/* Footer */
+
 footer{
     background-color: white;
     color: #666;
-    width: 100vw;
+    width: 100%;
 }
 
 .info-footer{
@@ -295,11 +296,10 @@ footer{
         display: none;}
     
     .info-footer{
-        width: 100vw;
+        width: 98vw;
         display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
+        justify-content: space-around;}
+
     .footer-info{
         width: 30%;
     }
